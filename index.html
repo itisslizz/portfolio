@@ -1,19 +1,206 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Marc Hüppin</title>
-	</head>
-	<body>
-		<head><h2>
-			Marc Hüppin <small>Welcome to my portfolio...</small>
-		</h2></head>
-		<div>
-			<p>
-			    
-			</p>
-		</div>
-	</body>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Hüppin - Software Developer</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css">
+  </head>
+  <body>
+    <!--<header>
+      <h1>Hi, I'm Marc</h1>
+      <h2>Welcome to my portfolio.</h2>
+      <h2>You can learn all about me here. </h2>
+      <img src="images/profile.jpg">
+      <div class="row">
+        <div class="small-12 large-4 columns home-menu">
+          <a href="#about-me">
+            <i class="home-icon fi-torso"></i>
+            <h3>About Me</h3>
+          </a>
+        </div>
+        <div class="small-12 large-4 columns home-menu">
+          <a href="#projects">
+            <i class="home-icon fi-paperclip"></i>
+            <h3>Projects</h3>
+          </a>
+        </div>
+        <div class="small-12 large-4 columns home-menu">
+          <a href="#contact">
+            <i class="home-icon fi-mail"></i>
+            <h3>Contact/Links</h3>
+          </a>
+        </div>
+      </div>
+
+    </header>-->
+
+    <section id="about-me">
+      <div class="banner" id="about-me-banner">
+        <h1>Marcs Portfolio</h1>
+      </div>
+      <article>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <div class="callout centered">
+              <div class="thumbnail-container">
+                <img id="profile-pic" class="thumbnail" src="images/profile_2.jpg">
+              </div>
+              <h3>Marc Hüppin</h3>
+              <p>
+                <span id="age"></span> <br>
+                Wettingen - Switzerland <br>
+                MSc in Computer Science <br>
+                German - English - <i>French</i><br>
+                <a href="documents/Marc-Hueppin-CV.pdf">Curriculum Vitae</a>
+              </p>
+            </div>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <ul class="tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#education" aria-selected="true">Education</a></li>
+              <li class="tabs-title"><a href="#work-exp">Work Experience</a></li>
+              <li class="tabs-title"><a href="#skills">Skills</a></li>
+              <li class="tabs-title"><a href="#interests">Interests</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="education">
+                <h3>ETH Zürich</h3>
+                <h4>Master of Science in Computer Science <small>2013-2016</small></h4>
+                <h5>Track: Distributed Systems</h5>
+                <h5>Master Thesis: "Opportunistic Sensing for Smart Heating Control Systems"</h5>
+                <p>Implementing occupancy sensing and prediction system on a low-cost single-board computer. Various sensors send relevant data to a webserver on the single-board computer, which in turn derives an optimal control strategy. The heating control is then applied by controlling radiator valves over wifi using the CoAP protocol.</p>
+                <h4>Bachelor of Science in Computer Science <small>2009-2013</small></h4>
+                <h5>Bachelor Thesis: "Smart Homes and Weather Events"</h5>
+                <p>Implemented an application for the home automation system of digitalSTROM. The application predicts the solar gain for the home using information about the house and local weather data supplied by MeteoSwiss and present them to the user.</p>
+              </div>
+              <div class="tabs-panel" id="work-exp">
+                <h3>Internship <small>2015-2016</small></h3>
+                <h4>digitalSTROM AG <small>Schlieren</small></h4>
+                <p>Working as a testing engineer on the digitalSTROM project. Work included designing and implementing manual and automatic testcases and organizing testruns using HP ALM.</p>
+                <h3>Internship <small>2013</small></h3>
+                <h4>ELCA AG <small>Zürich</small></h4>
+                <p>Working on a project with the goal of building an iOS App using HTML5 and Phonegap. As well as a CMS using a RESTful back end built with Java Spring and a front end application built with AngularJS.</p>
+              </div>
+              <div class="tabs-panel" id="skills">
+                <p>Python, Java, C++, C, HTML, CSS, JavaScript</p>
+                <p>Django, AngularJS, jQuery</p>
+                <p>Eclipse, AndroidStudio</p>
+                <p>Windows, OSX, Linux</p>
+                <p>MySQL</p>
+                <p>Git</p>
+              </div>
+              <div class="tabs-panel" id="interests">
+                <h5>Programming</h5>
+                <p>Learn about existing and new technologies and testing them on small projects.</p>
+                <h5>Travelling</h5>
+                <p>Explore the world learn about differences and similarities in cultures all over or just enjoy lovely beaches and landscapes.</p>
+                <h5>Sports</h5>
+                <p>Play Football and Basketball with friends or watch the Pros do it on TV.</p>
+                <h5>Music and Movies</h5>
+                <p>New and old, dark and light. Watch, listen, think, discuss.
+              </div>
+            </div>
+
+          </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <div class="banner" id="projects-banner">
+        <h1>Projects</h1>
+      </div>
+      <article>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#thesis" aria-selected="true">Master Thesis</a></li>
+              <li class="tabs-title"><a href="#pr-personal">Personal</a></li>
+              <li class="tabs-title"><a href="#pr-websites">Websites</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="thesis">
+                <h4><a href="https://github.com/itisslizz/HeatingController">Heating Controller</a></h4>
+                <p>For my Master Thesis I built a Smart Heating Control System which consisted of several parts. The controller itself was built in python and ran on a RaspberryPi. Its task
+                consists of collecting data from various sensors, deriving a control strategy and then implement this strategy on the heaters. The code for this part can be found on
+                <a href="https://github.com/itisslizz/HeatingController">GitHub</a>.</p>
+                <h4><a href="https://github.com/itisslizz/RegisterAtHome">Android App</a></h4>
+                <p>A smaller part was a small Android App designed to record timestamps of disconnecting and connecting to the home WiFi network as well as send these timestamps to the controller.
+                  The code for the App can be found <a href="https://github.com/itisslizz/RegisterAtHome">here</a>.
+              </div>
+              <div class="tabs-panel" id="pr-personal">
+                <h4>Concerning Movies</h4>
+                <p>
+                  I have created many projects during the course of my studies at ETH and in my free time. One idea that I keep coming back to is
+                  to improve the social experience of watching movie. Currently I am working on two projects focusing on this idea. Both are not complete
+                  as of now.
+                </p>
+                <h5>Movie Journal</h5>
+                <p>
+                  The first one is a web application allowing a user to maintain a journal of movies he watched as well as a watchlist of movies
+                   he wants to watch. Previous versions were built using PHP. The current version consists of a back end built using Python and Django
+                   and the front end built using AngularJS. Find the links to the repositories below.
+                 </p>
+                 <p>
+                   <a href="https://github.com/itisslizz/MJRestApi">Back end</a><br>
+                   <a href="https://github.com/itisslizz/MJFrontEnd">Front end</a>
+                </p>
+                <h5>Movie Selector</h5>
+                <p>
+                  Project number two is concerned with finding a smarter way to decide which movie to watch as a group. It is an Android App on the front end
+                  the back end is built using Python Django and the excellent django-rest-framework. The code is currently not available on GitHub.
+                </p>
+              </div>
+              <div class="tabs-panel" id="pr-websites">
+                <p>To make a little money on the side I created some small websites.</p>
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                    <div class="thumbnail">
+                      <img src= "images/orun.png">
+                    </div>
+                  </div>
+                  <div class="small-12 medium-9 columns">
+                    <h4><a href="http://orunpalit.ch">orunpalit.ch</a></h4>
+                    <p>Homepage for a local politician, built using wordpress. I created a custom theme as well as several custom post types.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                    <div class="thumbnail">
+                      <img src= "images/denk-stoff.png">
+                    </div>
+                  </div>
+                  <div class="small-12 medium-9 columns">
+                    <h4><a href="http://denk-stoff.ch">denk-stoff.ch</a></h4>
+                    <p>Homepage for a local politician, built using wordpress. I created a custom theme as well as several custom post types.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </article>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <div class="banner" id="contact-banner">
+        <h2>Links</h2>
+        <div class="row">
+          <div class="small-12 medium-4 columns"><h5><a href="mailto:mhueppin@gmail.com"><i class="fi-mail"></i> mhueppin@gmail.com</a></h5></div>
+          <div class="small-12 medium-4 columns"><h5><a href="https://github.com/itisslizz" target="_blank"><i class="fi-social-github"></i> Github Profil</a></h5></div>
+          <div class="small-12 medium-4 columns"><h5><a href="https://www.linkedin.com/in/marc-h%C3%BCppin-964506127" target="_blank"><i class="fi-social-linkedin"></i> LinkedIn Profil</a></h5></div>
+        </div>
+      </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
